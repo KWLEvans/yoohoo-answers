@@ -12,9 +12,11 @@
   "eqeqeq": true,
   "evil": true,
   "forin": false,
+  "globals": {
+    "moment": false,
+  },
   "immed": false,
   "laxbreak": false,
-  "moment": false,
   "newcap": true,
   "noarg": true,
   "noempty": false,
