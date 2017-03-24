@@ -1,7 +1,12 @@
-<div class="panel panel-default">
-  <div class="panel-body">
-    <blockquote>{{answer.text}}</blockquote>
-    <h6>By: {{answer.author}}</h6>
-    <small>{{answer.timestamp}}</small>
+{{#if editAnswerForm}}
+  {{edit-answer answer=answer updateAnswer="updateAnswer"}}
+{{else}}
+  <div class="panel panel-default">
+    <div class="panel-body">
+      <blockquote>{{answer.text}}</blockquote>
+      <h6>By: {{answer.author}}</h6>
+      <small>{{answer.timestamp}}</small>
+      <button class="btn btn-warning" {{action 'editAnswerForm'}}>Edit</button>
+    </div>
   </div>
-</div>
+{{/if}}
