@@ -9,6 +9,10 @@ export default Ember.Component.extend({
         timestamp: "Updated: " + moment().format('MMMM Do YYYY, h:mm:ss a'),
       };
       this.sendAction('updateAnswer', params, answer);
+    },
+
+    deleteAnswer(answer) {
+      this.sendAction('deleteAnswer', answer);
     }
   }
 });

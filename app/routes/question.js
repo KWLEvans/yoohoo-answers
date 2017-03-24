@@ -42,10 +42,11 @@ export default Ember.Route.extend({
           answer.set(key, params[key]);
         }
       });
-      console.log(params.timestamp);
-      console.log(answer.timestamp);
       answer.save();
-      this.transitionTo('question');
+    },
+
+    deleteAnswer(answer) {
+      answer.destroyRecord();
     }
   },
 });

@@ -10,6 +10,11 @@ export default Ember.Component.extend({
     updateAnswer(params, answer) {
       this.set('editAnswerForm', false);
       this.sendAction('updateAnswer', params, answer);
+    },
+
+    deleteAnswer(answer) {
+      this.set('editAnswerForm', false);
+      this.sendAction('deleteAnswer', answer);
     }
   }
 });
