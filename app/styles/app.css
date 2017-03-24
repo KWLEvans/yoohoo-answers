@@ -1,0 +1,38 @@
+body {
+  background-color: #ffe477;
+}
+
+a {
+  color: #0f3ee7;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+#page-header {
+  margin-bottom: 10px;
+}
+
+#brand {
+  height: 100px;
+}
+
+ #nav-buttons button {
+   margin: 10% 5% 0% 0%;
+   float: right;
+   background-color: #e9240e;
+   color: white;
+ }
+
+ #nav-buttons button:hover {
+   color: #f8c300;
+ }
+
+#yoohooz {
+  background-image: url(http://www.web2carz.com/images/articles/201407/yoohoo_chocolate_drink_1405715527_300x400.jpg);
+  background-size: contain;
+  height: 300px;
+  width: 100vw;
+  margin-bottom: 30px;
+}

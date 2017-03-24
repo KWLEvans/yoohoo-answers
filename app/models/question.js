@@ -4,7 +4,7 @@ export default DS.Model.extend({
   title: DS.attr('string'),
   author: DS.attr('string'),
   content: DS.attr('string'),
-  timestamp: DS.attr('date'),
+  timestamp: DS.attr('string'),
   edited: DS.attr('boolean', { defaultValue: false }),
   date: Ember.computed('timestamp', 'edited', function() {
     var date = "";

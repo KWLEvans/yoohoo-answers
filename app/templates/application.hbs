@@ -1,5 +1,15 @@
-{{#link-to 'index'}}<h1>Yoohoo Answers</h1>{{/link-to}}
-<hr>
 <div class="container">
-{{outlet}}
+  <div id="page-header" class="row">
+    <div class="col-xs-6">
+      {{#link-to 'index'}}<h1><img id="brand" src="https://t0.rbxcdn.com/4ed8ca89f2d71c329fea1bf9ec849a91">Answers</h1>{{/link-to}}
+    </div>
+    <div id="nav-buttons" class="col-xs-6">
+      {{#link-to 'new-question'}}<button class="btn">Ask a new question</button>{{/link-to}}
+      {{#link-to 'index'}}<button class="btn">Home</button>{{/link-to}}
+    </div>
+  </div>
+</div>
+<div id="yoohooz"></div>
+<div class="container">
+  {{outlet}}
 </div>

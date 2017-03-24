@@ -3,7 +3,7 @@ import DS from 'ember-data';
 export default DS.Model.extend({
   text: DS.attr('string'),
   author: DS.attr('string'),
-  timestamp: DS.attr('date'),
+  timestamp: DS.attr('string'),
   edited: DS.attr('boolean', { defaultValue: false }),
   date: Ember.computed('timestamp', 'edited', function() {
     var date = "";
