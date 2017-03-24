@@ -1,2 +1,6 @@
 {{question-detail question=model}}
 {{add-answer question=model createAnswer="createAnswer"}}
+<h3>Answers</h3>
+{{#each model.answers as |answer|}}
+  {{answer-tile answer=answer}}
+{{/each}}

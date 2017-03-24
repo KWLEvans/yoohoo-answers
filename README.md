@@ -64,7 +64,7 @@ Make use of the many generators for code, try `ember help generate` for more det
   ```
   * Install **moment** and save as a dependency in bower.json for easier timestamps
   ```console
-  bower install moment --save
+  ember install ember-moment
   ```
   * Install **emberfire** and save as a dependency in package.json for firebase database interface
   ```console
