@@ -1,5 +1,7 @@
-{{question-detail question=model}}
+{{question-detail question=model updateQuestion="updateQuestion" deleteQuestion="deleteQuestion"}}
+<h3>Add an Answer</h3>
 {{add-answer question=model createAnswer="createAnswer"}}
+<hr>
 <h3>Answers</h3>
 {{#each model.answers as |answer|}}
   {{answer-tile answer=answer}}

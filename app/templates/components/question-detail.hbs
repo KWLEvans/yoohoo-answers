@@ -1,3 +1,6 @@
+{{#if editQuestionForm}}
+  {{edit-question question=question updateQuestion="updateQuestion" deleteQuestion="deleteQuestion"}}
+{{else}}
 <div class="panel panel-default">
   <div class="panel-heading">
     <h3>{{question.title}}</h3>
@@ -6,5 +9,7 @@
     <small>{{question.timestamp}}</small>
     <h5>By: {{question.author}}</h5>
     <blockquote>{{question.content}}</blockquote>
+    <button class="btn btn-warning" {{action 'editQuestionForm'}}>Edit</button>
   </div>
 </div>
+{{/if}}
