@@ -7,7 +7,8 @@ export default Ember.Component.extend({
         title: this.get('title'),
         author: this.get('author'),
         content: this.get('content'),
-        timestamp: "Updated: " + moment().format('MMMM Do YYYY, h:mm:ss a'),
+        timestamp: moment(),
+        edited: true
       };
       this.sendAction('updateQuestion', params, question);
     },

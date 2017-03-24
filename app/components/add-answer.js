@@ -6,7 +6,7 @@ export default Ember.Component.extend({
       var params = {
         text: this.get('answer'),
         author: this.get('author'),
-        timestamp: moment().format('MMMM Do YYYY, h:mm:ss a'),
+        timestamp: moment(),
         question: this.get('question'),
       };
       this.sendAction('createAnswer', params);
