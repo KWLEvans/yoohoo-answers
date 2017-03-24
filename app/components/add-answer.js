@@ -9,6 +9,8 @@ export default Ember.Component.extend({
         timestamp: moment(),
         question: this.get('question'),
       };
+      $("#answer-author").val("");
+      $("#answer-answer").val("");
       this.sendAction('createAnswer', params);
     }
   },
